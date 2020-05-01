@@ -1,1 +1,13 @@
+To Run the application
+Copy the files into the OWASP BWA virtual machine(Except the WAF folder).
+The path for the folders to be replaced is /owaspbwa/owaspbwa-svn/var/lib/tomcat6/webapps/yazd
+Then replace the content of the WAF folder to /owaspbwa/owasp-modsecurity-crs-git
+You can activate WAF by using this commands 
+go to this folder    /var/log/apache2/
+Run this commands
+owaspbwa-modsecurity-crs-log.sh
+owaspbwa-modsecurity-crs-block.sh
+To deactivate 
+owaspbwa-modsecurity-crs-off.sh
 
+We decided to work on the OWASP BWA because apache2 and tomcat6 are preinstalled.
